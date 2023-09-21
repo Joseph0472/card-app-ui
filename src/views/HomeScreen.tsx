@@ -5,14 +5,14 @@ import { Form } from '../components/Form';
 
 function HomeScreen() {
     return (
-        <div className="App">
+        <div className="App" data-testid="home-screen">
             <div className="container">
                 <Header navto="/menu"/>
                 <Content initialUserData={{
                     FirstName: "Joseph",
                     LastName: "Jiang"
                 }}/>
-                <Form/>
+                <Form />
             </div>
         </div>
     );
