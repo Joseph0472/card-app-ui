@@ -7,7 +7,7 @@ function MenuScreen() {
             <div className="container">
                 <Header navto="/"/>
                     <div className="Content">
-                        <strong><p>This is menu content</p></strong>
+                        <p className='menuText'>This is menu content</p>
                     </div>
             </div>
         </div>

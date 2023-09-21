@@ -82,7 +82,7 @@ input::-webkit-inner-spin-button {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -112,6 +112,9 @@ input::-webkit-inner-spin-button {
 }
 .Icon {
   position: fixed;
+}
+.menuText {
+  margin-right: 90px;
 }
 /* Simple responsive effect */
 @media only screen and (max-width: 300px) {
