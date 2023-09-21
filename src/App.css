@@ -39,3 +39,94 @@
     transform: rotate(360deg);
   }
 }
+
+.register {
+  grid-area: 3 / 1 / 4 / 2;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 10px 20px 10px;
+
+}
+#creditNum {
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+#cvc {
+  grid-area: 2 / 2 / 3 / 4; 
+}
+
+#exp {
+  grid-area: 2 / 4 / 3 / 6; 
+}
+
+#submit {
+  grid-area: 3 / 1 / 4 / 6; 
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container {
+  max-width: 1170px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.Content {
+  position: relative;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.Headertext {
+  grid-area: 1 / 1 / 2 / 3;
+
+  text-align: center;
+}
+.Header {
+  grid-area: 1 / 1 / 2 / 2;
+  padding : 10px;
+  height: 25px;
+  position: relative;  
+  align-items: flex-start;
+  border-bottom: solid;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.Icon {
+  position: fixed;
+}
+/* Simple responsive effect */
+@media only screen and (max-width: 300px) {
+  .Header {
+    padding : 10px;
+    height: 25px;
+    position: relative;  
+    border-bottom: solid;
+    display: block;
+  }
+    .Headertext {
+      display: none;
+    }
+    .Icon {
+      position: relative;
+      text-align: center;  
+    }
+  }

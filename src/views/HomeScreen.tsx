@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { Content } from '../components/Content';
+import { Form } from '../components/Form';
 
 function HomeScreen() {
     return (
@@ -11,6 +12,7 @@ function HomeScreen() {
                     FirstName: "Joseph",
                     LastName: "Jiang"
                 }}/>
+                <Form/>
             </div>
         </div>
     );
